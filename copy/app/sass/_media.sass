@@ -1,0 +1,234 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+
+
+@media only screen and (max-width : 1400px)
+    .hlt-wraper
+      .footer
+        .bg-holder-right
+          width: 290px
+          height: 400px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+    .hlt-wraper
+      h1
+        font-size: 30px
+        min-width: 470px
+      .blue-button
+        font-size: 40px
+        min-width: 470px
+      .wrap-content
+        width: 70%
+
+
+      .footer
+        .bg-holder-right
+          display: none
+        .bg-holder-left
+          display: none
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+    .hlt-wraper
+      .wrap-logo
+        max-width: 250px
+
+      .wrap-form-hold
+        .form-hold
+          .form-row
+            width: 80%
+            margin: 5px auto
+          .wrap-btn
+            &:after
+              top: 50%
+              left: 25px
+              width: 9px
+              height: 9px
+          .form-control
+            height: 50px
+          .btn
+            height: 50px
+          .radio
+            display: flex
+            font-size: 18px
+            position: relative
+            flex-direction: row
+            .chexbox-text
+              display: inline-block
+              margin: 0 0 0 10px
+              line-height: 1.6
+            .wrapper-checkbox
+              margin: 0
+              .wrap-radio
+                label
+                  order: 1
+
+
+
+
+      .footer
+        .items
+          margin: 120px -10px 70px
+          .item
+            padding: 0 10px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+    .hlt-wraper
+      h1
+        font-size: 27px
+        min-width: 420px
+      .blue-button
+        font-size: 33px
+        min-width: 420px
+      .wrap-content
+        width: 100%
+
+      .wrap-form-hold
+        .form-hold
+          border-radius: 0
+          .form-row
+            width: 100%
+
+      .main
+        .main-holder
+          margin: 70px auto 0
+
+      .footer
+        .items
+          margin: 35px -30px 40px
+          .item
+            width: 50%
+        .main-holder
+          max-width: 450px
+        .desctop-hiddn
+          direction: rtl
+          display: block
+          margin-top: 30px
+          font-family: "almoni-dl-aaa-bold"
+          font-size: 23px
+          line-height: 1.2
+          color: #01013b
+          text-align: center
+          padding-bottom: 20px
+          margin-bottom: 20px
+          position: relative
+          &:after
+            content: ''
+            width: 70px
+            color: #00b3cc
+            position: absolute
+            border-bottom: 5px solid #00b3cc
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            z-index: 2
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+    .label
+      right: -40px
+      left: auto
+    .hlt-wraper
+      .header
+        background-image: url(../img/background-header-mobile.png) !important
+        //min-height: 664px
+        min-height: 480px
+        background-position: top
+      .wrap-content
+        align-items: center
+        margin-top: 15px
+      h1
+        font-size: 20px
+        min-width: 330px
+        padding: 7px 20px
+      .blue-button
+        font-size: 26px
+        min-width: 330px
+        padding: 7px 20px
+        &:after
+          background-image: url(../img/blue-button-element-mobile.png) !important
+          width: 23px
+          height: 19px
+          bottom: -8px
+          left: 25px
+      .wrap-text
+        display: flex
+        flex-direction: column
+      .wrap-form-hold
+        margin-top: 0
+        .form-hold
+          padding: 15px 30px
+          h3
+            font-size: 24px
+            margin: 0 0 10px
+            line-height: 1
+      .main
+        .main-holder
+          margin: 40px auto 40px
+          p
+            font-size: 20px
+
+      .footer
+        .items
+          margin: 25px -15px 30px
+          .wrap-img
+            width: 80px
+            height: 80px
+          .item
+            padding: 0 -15px
+            font-size: 16px
+            min-height: 125px
+            margin-bottom: 15px
+        .bg-holder-bottom
+          background-image: url(../img/bottom-holder-mobile.png) !important
+          height: 11px
+
+      .thanks-bg
+        min-height: 670px
+        .wrap-content
+          width: 100%
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

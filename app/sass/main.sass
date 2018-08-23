@@ -1,0 +1,557 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+
+//===================================================
+
+img
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, p, span
+	margin: 0 auto
+	padding: 0 auto
+	text-decoration: none
+	font-weight: normal
+
+ul
+	margin: 0 auto
+	padding: 0
+
+.main-holder
+	overflow: hidden
+	max-width: 1300px
+	margin: 0 auto
+	padding: 0 20px
+	position: relative
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+input, textarea, select
+	outline: none
+
+
+//===================================================
+.label
+	z-index: 50
+	position: absolute
+	padding: 15px 15px
+	left: -40px
+	top: 50px
+	color: #fff
+	text-transform: uppercase
+	font-size: 10px
+	//-webkit-transform: rotate(-90deg)
+	//-ms-transform: rotate(-90deg)
+	transform: rotate(-90deg)
+	&:after
+		content: ''
+		position: absolute
+		right: 109px
+		top: 48%
+		//-webkit-transform: translateY(-50%)
+		//-ms-transform: translateY(-50%)
+		transform: translateY(-50%)
+		width: 5px
+		height: 5px
+		background: #fff
+		//-webkit-border-radius: 50%
+		border-radius: 50%
+.hlt-wraper
+	.header
+		width: 100%
+		min-height: 540px
+		background-size: cover
+		background-position: center
+		direction: rtl
+		.main-holder
+			max-width: 1130px
+	.wrap-content
+		display: flex
+		flex-direction: column
+		margin-top: 40px
+		width: 60%
+	.wrap-logo
+		max-width: 303px
+		margin-bottom: 30px
+	h1
+		font-family: "almoni-dl-aaa-regular"
+		font-size: 25px
+		line-height: 1
+		color: white
+		//background: #dc276d
+		display: inline-block
+		padding: 7px 35px
+		min-width: 550px
+		border-radius: 55px
+		margin-bottom: 10px
+		span
+			font-family: "almoni-dl-aaa-bold"
+			font-size: 35px
+
+	.blue-button
+		font-family: "almoni-dl-aaa-regular"
+		font-size: 23px
+		color: white
+		line-height: 1
+		background: #000246
+		display: inline-block
+		border-radius: 55px
+		padding: 7px 35px
+		min-width: 550px
+		position: relative
+		margin-bottom: 25px
+		&:after
+			content: ''
+			background-image: url(../img/blue-button-element.png)
+			background-size: cover
+			width: 41px
+			height: 45px
+			position: absolute
+			bottom: -13px
+			left: 40px
+			z-index: 22
+		span
+			display: block
+			font-family: "almoni-dl-aaa-black"
+			color: #fcaf17
+			font-size: 50px
+		.breake
+			display: inline-block
+	//contact form ===================================
+	.wrap-form-hold
+		margin-top: -75px
+		.main-holder
+			max-width: 1130px
+			padding: 0
+
+		.form-hold
+			z-index: 1
+			//background: #f8be20
+			padding: 15px 45px
+			min-height: 130px
+			width: 100%
+			position: relative
+			border-radius: 65px
+			background-color: #00bac6
+			//opacity: .75
+			input, textarea
+				&::placeholder
+					color: #b9b9b9
+
+			h3
+				direction: rtl
+				text-align: center
+				font-family: "almoni-dl-aaa-bold"
+				font-size: 24px
+				margin: 0 0 25px
+				color: #01013b
+				font-weight: bold
+				line-height: 1.4
+
+			.form
+				direction: rtl
+				max-width: 1200px
+				margin: 0 auto
+				position: relative
+				transition: opacity 0.2s ease-in-out
+
+			.form-row-wrap
+				display: flex
+				flex-wrap: wrap
+				margin: 0 -8px
+
+			.form-row
+				width: 16%
+				padding: 0 8px
+
+
+
+			.form-control
+				padding: 10px
+				direction: rtl
+				display: block
+				width: 100%
+				height: 35px
+				border: none
+				border-radius: 25px
+				outline: none
+				font-size: 17px
+				font-family: "almoni-dl-aaa-regular"
+				line-height: 1.2
+				text-decoration: none
+				transition: all .5s ease
+				color: rgb(186, 186, 186)
+
+
+
+				&:hover
+					//background-color: #dad8d2
+					border: 1px solid rgb(89, 47, 20)
+					text-decoration: none
+					color: #111
+			.wrap-btn
+				width: 18%
+			.wrap-btn
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					border: none
+					outline: 0
+					top: 50%
+					left: 15%
+					width: 11px
+					height: 11px
+					border-left: 2px solid white
+					border-top: 2px solid white
+					//z-index: 99999
+					transform: translateY(-50%) rotate(-45deg)
+					z-index: 99999
+
+			.btn
+				background: #000246
+				font-family: "almoni-dl-aaa-bold"
+				color: white
+				text-align: center
+				height: 35px
+				border: none
+				border-radius: 25px
+				outline: none
+				display: block
+				width: 100%
+				font-size: 20px
+				text-decoration: none
+				transition: all .5s ease
+				&:hover
+					background-color: #171a6d
+					text-decoration: none
+					box-shadow: 1.414px 1.414px 50px 0px rgba(77, 77, 77, 0.3)
+			.radio
+				font-family: "almoni-dl-aaa-regular"
+				font-size: 14px
+				color: #171a6d
+				display: flex
+				flex-direction: column
+				.chexbox-text
+					line-height: .6
+					margin-bottom: 5px
+				.wrapper-checkbox
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100px
+					margin: 0 auto
+					.wrap-radio
+						width: 50%
+						display: flex
+						justify-content: center
+						align-items: center
+						input
+							width: 23px
+							height: 20px
+						label
+							margin: 0 5px
+
+
+	.main
+		.main-holder
+			text-align: center
+			margin: 70px auto 80px
+			p
+				direction: rtl
+				font-family: "almoni-dl-aaa-regular"
+				font-size: 25px
+				line-height: 1.2
+				color: #00003c
+
+	.wrap-button-scroll
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 40px
+		margin-bottom: 40px
+
+		.button
+			position: relative
+			display: flex
+			justify-content: center
+			align-items: center
+			background: #dc276d
+			font-family: "almoni-dl-aaa-bold"
+			color: white
+			text-align: center
+			height: 50px
+			border: none
+			border-radius: 25px
+			outline: none
+			//display: block
+			width: 300px
+			font-size: 20px
+			text-decoration: none
+			transition: all .5s ease
+			&:hover
+				background-color: #b5225b
+				text-decoration: none
+				box-shadow: 1.414px 1.414px 50px 0px rgba(77, 77, 77, 0.3)
+			&:after
+				content: ''
+				position: absolute
+				border: none
+				outline: 0
+				top: 50%
+				left: 15%
+				width: 11px
+				height: 11px
+				border-left: 2px solid white
+				border-top: 2px solid white
+				//z-index: 99999
+				transform: translateY(-50%) rotate(-45deg)
+				z-index: 99999
+
+
+	.footer
+		background: #f4f4f4
+		position: relative
+		.desctop-hiddn
+			display: none
+		.main-holder
+			max-width: 760px
+		.bg-holder-left
+			position: absolute
+			width: 180px
+			height: 105px
+			background-image: url(../img/smile.png)
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+		.bg-holder-right
+			position: absolute
+			width: 429px
+			height: 535px
+			background-image: url(../img/woman.png)
+			background-size: cover
+			bottom: 0
+			right: 0
+			//transform: translateY(-50%)
+		.bg-holder-bottom
+			position: absolute
+			width: 100%
+			height: 17px
+			background-image: url(../img/bottom-holder.png)
+			background-size: cover
+			bottom: 0
+			left: 0
+		.items
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+			margin: 120px -10px 70px
+			direction: rtl
+			.item
+				width: 25%
+				padding: 0 10px
+				list-style: none
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: flex-start
+				min-height: 170px
+				font-family: "almoni-dl-aaa-bold"
+				font-size: 21px
+				text-align: center
+				line-height: 1
+				margin-bottom: 25px
+			.wrap-img
+				width: 100px
+				height: 100px
+				background: #00b3cc
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-bottom: 20px
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					background-image: url(../img/item-holder.png)
+					width: 22px
+					height: 19px
+					background-size: cover
+					bottom: 0
+					left: 10px
+
+	.copirate-footer
+		width: 100%
+		min-height: 70px
+		background: #00003c
+		direction: rtl
+		.wrap-button
+			display: flex
+			align-items: center
+			justify-content: right
+			height: 70px
+		a
+			color: white
+			font-family: "almoni-dl-aaa-regular"
+			font-size: 22px
+			border-bottom: 1px solid white
+			text-decoration: none
+			line-height: 1.2
+			transition: all .2s ease
+			&:hover
+				border-bottom: none
+
+
+	.thanks-bg
+		width: 100%
+		height: 100vh
+		background-size: cover
+		background-position: center
+		.wrap-content
+			width: 60%
+
+
+
+
+/* The Modal (background) */
+.modal
+	display: none /* Hidden by default */
+	position: fixed /* Stay in place */
+	z-index: 99 /* Sit on top */
+	padding-top: 210px /* Location of the box */
+	left: 0
+	top: 0
+	width: 100% /* Full width */
+	height: 100% /* Full height */
+	overflow: auto /* Enable scroll if needed */
+	background-color: rgb(0,0,0) /* Fallback color */
+	background-color: rgba(0,0,0,0.5) /* Black w/ opacity */
+	/* Modal Content */
+	.modal-content
+		position: relative
+		background-color: #000246
+		margin: auto
+		padding: 20px 45px
+		border: none
+		max-width: 1070px
+		min-height: 160px
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+		-webkit-animation-name: animatetop
+		-webkit-animation-duration: 0.4s
+		animation-name: animatetop
+		animation-duration: 0.4s
+		display: flex
+		align-items: center
+		justify-content: center
+		p
+			color: white
+			font-family: "almoni-dl-aaa-regular"
+			font-size: 20px
+			line-height: 1.2
+			direction: rtl
+
+		.close
+			//color: white
+			//float: right
+			//font-size: 28px
+			//font-weight: bold
+			width: 15px
+			height: 12px
+			background-image: url(../img/x.png)
+			position: absolute
+			top: 20px
+			right: 20px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: white
+			font-size: 20px
+			font-family: "Heebo-Light"
+
+		.close:hover,
+		.close:focus
+			color: #000
+			text-decoration: none
+			cursor: pointer
+
+
+		.modal-header
+			padding: 2px 16px
+			background-color: #5cb85c
+			color: white
+
+		.modal-body
+			padding: 2px 16px
+
+		.modal-footer
+			padding: 2px 16px
+			background-color: #5cb85c
+			color: white
+
+
+
+
+
+@import "media" // Всегда в конце
